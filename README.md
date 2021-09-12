@@ -1,3 +1,23 @@
+# Task App
+
+A small React app tha
+
+## Why
+
+To practice passing props and using state in React
+
+## The Rest
+
+The rest of this is from the create-react-app and I'll leave it so I can look at it later
+
+.
+
+.
+
+.
+
+.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
