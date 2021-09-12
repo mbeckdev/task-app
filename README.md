@@ -1,14 +1,14 @@
 # Task App
 
-A small React app tha
+A small React app that takes a task and adds it to the state and shows the list of tasks.
 
 ## Why
 
-To practice passing props and using state in React
+To practice passing props and using state in React.
 
 ## The Rest
 
-The rest of this is from the create-react-app and I'll leave it so I can look at it later
+The rest of this is from the create-react-app and I'll leave it so I can look at it later.
 
 .
 
