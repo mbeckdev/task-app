@@ -6,6 +6,15 @@ A small React app that takes a task and adds it to the state and shows the list 
 
 To practice passing props and using state in React.
 
+## Things I learned
+
+- yarn add uniqid   (cool library uniqid)   you use it by uniqid() which gives a unique text which you need because every tasks needs one
+- remember you can use .concat   like    taskList: this.state.taskList.concat(this.state.task),
+- by changing the input, you trigger the handleChange method which sets the state, and then the input takes that state and writes it to the input value.  That's the way to do it but seems backwards to my first thought of changing the input then taking the input and changing state after
+- if you're going to use .map to write a bunch of items on the screen, you're probably going to need a key on each of those
+- app.js is written as a class component, and overview.js is written as a functional component (it can be functional because it doesn't change state)
+- oops, if you want to use .scss (SASS) files, you need to install the library first. duh. After realizing that I decided against it for this little project.
+
 ## The Rest
 
 The rest of this is from the create-react-app and I'll leave it so I can look at it later.
