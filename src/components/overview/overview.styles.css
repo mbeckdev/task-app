@@ -1,0 +1,10 @@
+.overview {
+  padding: 20px;
+  /* background-color: lightblue; */
+  min-height: 20px;
+}
+
+h2 {
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
