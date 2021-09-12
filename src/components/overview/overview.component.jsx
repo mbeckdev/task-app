@@ -8,11 +8,11 @@ const Overview = (props) => {
     <div className="overview">
       <h2>All Tasks</h2>
 
-      <div>
+      <ul>
         {taskList.map((atask) => {
           return <li key={atask.id}>{atask.text}</li>;
         })}
-      </div>
+      </ul>
     </div>
   );
 };
