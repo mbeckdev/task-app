@@ -10,8 +10,9 @@ class App extends React.Component {
     super();
 
     this.state = {
-      task: { text: '', id: uniqid() },
+      task: { text: '', id: uniqid(), listNumber: 1 },
       taskList: [],
+      nextListNumber: 2,
     };
   }
 
@@ -20,6 +21,7 @@ class App extends React.Component {
       task: {
         text: e.target.value,
         id: this.state.task.id,
+        listNumber: this.state.task.listNumber,
       },
     });
   };
@@ -31,8 +33,10 @@ class App extends React.Component {
       task: {
         text: '',
         id: uniqid(),
+        listNumber: this.state.nextListNumber++,
       },
       taskList: this.state.taskList.concat(this.state.task),
+      nextListNumber: this.state.nextListNumber++,
     });
   };
 
