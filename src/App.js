@@ -29,6 +29,7 @@ class App extends React.Component {
   submitTask = (e) => {
     e.preventDefault();
 
+    console.log(this.state);
     this.setState({
       task: {
         text: '',
@@ -38,6 +39,7 @@ class App extends React.Component {
       taskList: this.state.taskList.concat(this.state.task),
       nextListNumber: this.state.nextListNumber++,
     });
+    console.log(this.state);
   };
 
   render() {
@@ -49,10 +51,12 @@ class App extends React.Component {
 
         <div>
           <form onSubmit={this.submitTask}>
+            <label htmlFor="taskInput">Enter task</label>
             <input
               type="text"
               value={task.text}
               onChange={this.handleChange}
+              id="taskInput"
             ></input>
             <button type="submit">Add Task</button>
           </form>
